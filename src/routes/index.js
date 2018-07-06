@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import asyncComponent from './../hoc/asyncComponent';
+import asyncComponent from '@/hoc/asyncComponent';
 
-const Home = asyncComponent(() => import('./../pages/Home/Home'));
-const ErrorPage = asyncComponent(() => import('./../pages/ErrorPage/ErrorPage'));
+const Home = asyncComponent(() => import('@/pages/Home/Home'));
+const ErrorPage = asyncComponent(() => import('@/pages/ErrorPage/ErrorPage'));
 
 const routes = () => {
     return (
