@@ -1,2 +1,3 @@
-# react-starter
-react starter files project
+# React Starter
+
+React starter files project.
