@@ -21,6 +21,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
+### `npm run start:prod`
+
+Runs the app from build directory after running `npm run build`.<br />
+Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
@@ -35,6 +40,12 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run analyze`
+
+Source map explorer analyzes JavaScript bundles using the source maps.<br />
+This helps you understand where code bloat is coming from.<br />
+It will open automatically the browser.
 
 ### `npm run eject`
 
