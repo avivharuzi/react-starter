@@ -17,6 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:prod": "http-server -p 8000 -c-1 build --proxy http://localhost:8000?",
     "build": "react-scripts build",
     "build:prod": "REACT_APP_STAGE=prod npm run build",
     "test": "react-scripts test",
@@ -36,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3"
   }
 }
