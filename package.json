@@ -16,6 +16,7 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",
     "start:prod": "http-server -p 8000 -c-1 build --proxy http://localhost:8000?",
     "build": "react-scripts build",
@@ -39,6 +40,7 @@
     ]
   },
   "devDependencies": {
-    "http-server": "^0.12.3"
+    "http-server": "^0.12.3",
+    "source-map-explorer": "^2.5.0"
   }
 }
