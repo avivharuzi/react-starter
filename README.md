@@ -11,6 +11,22 @@ React Starter is a React template based from create-react-app template with extr
 - Node.js (>= 12 required)
 - npm package manager (>= 6 required)
 
+## Extra Features
+
+- SCSS Support
+- PWA
+- Bundle Analyzer
+- Husky (git hooks)
+- Prettier (format code style)
+
+## First Steps
+
+1. Replace all **react-starter** keyword from this project with your new project name, for example: **my-website**
+1. Replace **public/favicon.ico** with your website favicon
+1. Replace **public/logo\*\.png** with your website icons
+1. Update this **README.md** according to your project changes
+1. If you are using monorepo multi-package repository consider removing husky (git hooks) to prevent conflicts between repos, I recommended deleting **.huskyrc.json** file and run: **npm uninstall husky** and then maybe to add husky in the root of the project
+
 ## Commands
 
 ### `npm start`
@@ -25,6 +41,14 @@ You will also see any lint errors in the console.
 
 Runs the app from build directory after running `npm run build`.<br />
 Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
+
+### `npm run format`
+
+Format project files with prettier.
+
+### `npm run lint`
+
+Lint project files with eslint.
 
 ### `npm test`
 
