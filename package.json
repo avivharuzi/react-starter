@@ -18,6 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:prod": "REACT_APP_STAGE=prod npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
