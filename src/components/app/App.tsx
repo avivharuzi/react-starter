@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './App.scss';
-
-export const App = (): JSX.Element => {
+export default (): JSX.Element => {
   return <div>react-starter</div>;
 };
