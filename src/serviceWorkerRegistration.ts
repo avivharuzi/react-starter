@@ -8,7 +8,7 @@
 // resources are updated in the background.
 
 // To learn more about the benefits of this model and instructions on how to
-// opt-in, read https://bit.ly/CRA-PWA
+// opt-in, read https://cra.link/PWA
 
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
@@ -47,7 +47,8 @@ export function register(config?: Config) {
         // service worker/PWA documentation.
         navigator.serviceWorker.ready.then(() => {
           console.log(
-            'This web app is being served cache-first by a service worker. To learn more, visit https://bit.ly/CRA-PWA'
+            'This web app is being served cache-first by a service ' +
+              'worker. To learn more, visit https://cra.link/PWA'
           );
         });
       } else {
@@ -74,7 +75,8 @@ function registerValidSW(swUrl: string, config?: Config) {
               // but the previous service worker will still serve the older
               // content until all client tabs are closed.
               console.log(
-                'New content is available and will be used when all tabs for this page are closed. See https://bit.ly/CRA-PWA.'
+                'New content is available and will be used when all ' +
+                  'tabs for this page are closed. See https://cra.link/PWA.'
               );
 
               // Execute callback
@@ -131,11 +133,12 @@ function checkValidServiceWorker(swUrl: string, config?: Config) {
     });
 }
 
-// noinspection JSUnusedGlobalSymbols
 export function unregister() {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.ready
-      .then(registration => registration.unregister())
+      .then(registration => {
+        registration.unregister().then();
+      })
       .catch(error => {
         console.error(error.message);
       });

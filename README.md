@@ -4,7 +4,7 @@ React Starter is a React template based from create-react-app template with extr
 
 ## React Version
 
-16.13.1
+17.0.2
 
 ## Prerequisites
 
